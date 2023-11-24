@@ -105,8 +105,7 @@
                     <img src="assets/imgs/avatar.jpg" alt="" class="img-thumbnail mb-4">
                 </div>
                 <div class="pl-md-4 col-md-9">
-                    <h6 class="title">James Smith</h6>
-                    <p class="subtitle">UI/UX Designer</p>
+                    <h6 class="title">About US</h6>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, pariatur, aperiam aut autem voluptas odit. Odio ducimus delectus totam sed aliquam sequi praesentium mollitia, illum repudiandae quidem quod, magni magnam.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, eius, nam. Quo praesentium qui temporibus voluptatum, facilis aliquid eligendi fugiat beatae neque inventore non. Laborum repellendus consequatur ullam voluptatum asperiores.</p>
                     <button class="btn btn-primary rounded mt-3">DOWNLOAD CV</button>                   
@@ -143,8 +142,6 @@
         </style>
     </head>
     <body>
-    
-    
         <!DOCTYPE html>
         <html lang="en">
         <head>
@@ -166,11 +163,21 @@
                     padding: 8px;
                     text-align: left;
                 }
+        
+                /* Flex container for labels and selects */
+                td {
+                    display: flex;
+                    align-items: center;
+                }
+        
+                /* Adjust label width if needed */
+                td label {
+                    flex: 1; /* Take up available space */
+                    margin-right: 10px; /* Adjust margin as needed */
+                }
             </style>
         </head>
         <body>
-        
-      
         
             <form action="/recommend" method="post">
         
@@ -179,13 +186,13 @@
                 <table>
                     <tr>
                         <th>Component</th>
-                        <th>Preference</th>
                     </tr>
+                    
                     <!-- Processor -->
                     <tr>
-                        <td><label for="processor">Processor:</label></td>
                         <td>
-                            <select name="processor">
+                            <label for="processor">Processor:</label>
+                            <select class="btn btn-primary rounded ml-4" name="processor">
                                 <option value="low">Low</option>
                                 <option value="medium">Medium</option>
                                 <option value="high">High</option>
@@ -195,9 +202,9 @@
         
                     <!-- Graphic Card -->
                     <tr>
-                        <td><label for="graphicCard">Graphic Card:</label></td>
                         <td>
-                            <select name="graphicCard">
+                            <label for="graphicCard">Graphic Card:</label>
+                            <select class="btn btn-primary rounded ml-4" name="graphicCard">
                                 <option value="low">Low</option>
                                 <option value="medium">Medium</option>
                                 <option value="high">High</option>
@@ -207,9 +214,9 @@
         
                     <!-- RAM -->
                     <tr>
-                        <td><label for="ram">RAM:</label></td>
                         <td>
-                            <select name="ram">
+                            <label for="ram">RAM:</label>
+                            <select class="btn btn-primary rounded ml-4" name="RAM">
                                 <option value="low">Low</option>
                                 <option value="medium">Medium</option>
                                 <option value="high">High</option>
@@ -219,9 +226,9 @@
         
                     <!-- HDD -->
                     <tr>
-                        <td><label for="hdd">HDD:</label></td>
                         <td>
-                            <select name="hdd">
+                            <label for="hdd">HDD:</label>
+                            <select class="btn btn-primary rounded ml-4" name="HDD">
                                 <option value="low">Low</option>
                                 <option value="medium">Medium</option>
                                 <option value="high">High</option>
@@ -233,8 +240,10 @@
         
                     <!-- Budget -->
                     <tr>
-                        <td><label for="budget">Budget:</label></td>
-                        <td><input type="number" name="budget" required></td>
+                        <td>
+                            <label for="budget">Budget:</label>
+                            <input class="btn btn-primary rounded ml-4" type="number" name="budget" required>
+                        </td>
                     </tr>
                 </table>
         
@@ -245,6 +254,9 @@
         
         </body>
         </html>
+        
+</html>
+
         
     
 </body>
