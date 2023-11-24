@@ -1,10 +1,14 @@
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, render_template, request
+from constraint import Problem
+# ... [Your CSP code here]
 
-app = Flask(__name__, template_folder="template")
+app = Flask(__name__)
 
-@app.route("/")
-def hello_world():
+@app.route('/')
+def index():
     return render_template('index.html')
 
-if __name__ == "__main__":
-    app.run(host='localhost', port=8801, debug=True)
+# ... [Other routes and functions]
+
+if __name__ == '__main__':
+    app.run(debug=True)
