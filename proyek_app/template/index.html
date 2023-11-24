@@ -114,136 +114,143 @@
             </div>
         </div>
     </section>
-
     <!-- Service section -->
     <section id="service" class="section">
         <div class="container text-center">
             <h6 class="subtitle">Service</h6>
-            <h6 class="section-title mb-4">What I Do</h6>
-            <p class="mb-5 pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos. <br> rerum commodi corrupti, temporibus non quam.</p>
-
-            <div class="row">
-                <div class="col-sm-6 col-md-3 mb-4">
-                    <div class="custom-card card border">
-                        <div class="card-body">
-                            <i class="icon ti-crown"></i>
-                            <h5>UI/UX Design</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3 mb-4">
-                    <div class="custom-card card border">
-                        <div class="card-body">
-                            <i class="icon ti-desktop"></i>
-                            <h5>Web Design</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3 mb-4">
-                    <div class="custom-card card border">
-                        <div class="card-body">
-                            <i class="icon ti-mobile"></i>
-                            <h5>App Design</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3 mb-4">
-                    <div class="custom-card card border">
-                        <div class="card-body">
-                            <i class="icon ti-bar-chart"></i>
-                            <h5>SEO</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- End of Sectoin -->
 
+    <body>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h1>PC Component Recommender</h1>
-    <form action="/recommend" method="post">
-        <!-- Form fields for user preferences -->
-        <!-- Example: -->
-        <label for="processor">Processor:</label>
-        <select name="processor">
-            <option value="low">Low</option>
-            <option value="medium">Medium</option>
-            <option value="high">High</option>
-        </select>
-
-        <label for="Graphic Card">Graphic Card:</label>
-        <select name="processor">
-            <option value="low">Low</option>
-            <option value="medium">Medium</option>
-            <option value="high">High</option>
-        </select>
-
-        <label for="RAM">RAM:</label>
-        <select name="processor">
-            <option value="low">Low</option>
-            <option value="medium">Medium</option>
-            <option value="high">High</option>
-        </select>
-
-        <label for="processor">HDD:</label>
-        <select name="processor">
-            <option value="low">Low</option>
-            <option value="medium">Medium</option>
-            <option value="high">High</option>
-        </select>
-
-        <!-- Add other fields similarly -->
-        <label for="budget">Budget:</label>
-        <input type="number" name="budget" required>
-        <br>
-        <input type="submit" value="Recommend">
-    </form>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PC Component Recommender</title>
+        <style>
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-bottom: 10px;
+            }
+    
+            table, th, td {
+                border: 1px solid white;
+            }
+    
+            th, td {
+                padding: 8px;
+                text-align: left;
+            }
+        </style>
+    </head>
+    <body>
+    
+    
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>PC Component Recommender</title>
+            <style>
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    margin-bottom: 10px;
+                }
+        
+                table, th, td {
+                    border: 1px solid white;
+                }
+        
+                th, td {
+                    padding: 8px;
+                    text-align: left;
+                }
+            </style>
+        </head>
+        <body>
+        
+      
+        
+            <form action="/recommend" method="post">
+        
+                <!-- Form fields for user preferences -->
+        
+                <table>
+                    <tr>
+                        <th>Component</th>
+                        <th>Preference</th>
+                    </tr>
+                    <!-- Processor -->
+                    <tr>
+                        <td><label for="processor">Processor:</label></td>
+                        <td>
+                            <select name="processor">
+                                <option value="low">Low</option>
+                                <option value="medium">Medium</option>
+                                <option value="high">High</option>
+                            </select>
+                        </td>
+                    </tr>
+        
+                    <!-- Graphic Card -->
+                    <tr>
+                        <td><label for="graphicCard">Graphic Card:</label></td>
+                        <td>
+                            <select name="graphicCard">
+                                <option value="low">Low</option>
+                                <option value="medium">Medium</option>
+                                <option value="high">High</option>
+                            </select>
+                        </td>
+                    </tr>
+        
+                    <!-- RAM -->
+                    <tr>
+                        <td><label for="ram">RAM:</label></td>
+                        <td>
+                            <select name="ram">
+                                <option value="low">Low</option>
+                                <option value="medium">Medium</option>
+                                <option value="high">High</option>
+                            </select>
+                        </td>
+                    </tr>
+        
+                    <!-- HDD -->
+                    <tr>
+                        <td><label for="hdd">HDD:</label></td>
+                        <td>
+                            <select name="hdd">
+                                <option value="low">Low</option>
+                                <option value="medium">Medium</option>
+                                <option value="high">High</option>
+                            </select>
+                        </td>
+                    </tr>
+        
+                    <!-- Add other fields similarly -->
+        
+                    <!-- Budget -->
+                    <tr>
+                        <td><label for="budget">Budget:</label></td>
+                        <td><input type="number" name="budget" required></td>
+                    </tr>
+                </table>
+        
+                <!-- Updated button -->
+                <button class="btn btn-primary rounded">REKOMENDASI</button>
+        
+            </form>
+        
+        </body>
+        </html>
+        
+    
+</body>
 </body>
 </html>
+
+    
+
+
