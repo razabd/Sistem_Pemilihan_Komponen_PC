@@ -2,7 +2,7 @@ from flask import Flask, request, render_template
 import json
 from constraint import Problem
 
-app = Flask(__name__, template_folder='proyek_app/templates')
+app = Flask(__name__, template_folder='templates')
 
 # Function to load data from a JSON file within the template directory
 def load_data(file_name):
@@ -18,11 +18,14 @@ vga = load_data("vga.json")
 psu = load_data("psu.json")
 
 def pc_constraints(processor, motherboard, selected_vga, selected_psu, budget):
+    # Motherboard harus sesuai dengan jenis processor
     if motherboards[motherboard]["processor_type"] != processors[processor]["processor_type"]:
         return False
+    # Hitung total WATT dan pilih PSU yang memadai
     total_watt = processors[processor]["WATT"] + motherboards[motherboard]["WATT"] + vga[selected_vga]["WATT"]
     if total_watt > psu[selected_psu]["WATT"]:
         return False
+    # Budget constraint
     total_cost = processors[processor]["price"] + motherboards[motherboard]["price"] + vga[selected_vga]["price"] + psu[selected_psu]["price"]
     if total_cost > budget:
         return False
