@@ -1,0 +1,72 @@
+{
+    "Intel Core i9-11900K": {
+        "RAM_requirement": 16,
+        "WATT": 250,
+        "processor_type": "Intel",
+        "Grade": "high",
+        "price": 15000000
+    },
+    "AMD Ryzen 9 5900X": {
+        "RAM_requirement": 16,
+        "WATT": 225,
+        "processor_type": "AMD",
+        "Grade": "high",
+        "price": 14000000
+    },
+    "Intel Core i7-10700K": {
+        "RAM_requirement": 16,
+        "WATT": 220,
+        "processor_type": "Intel",
+        "Grade": "medium",
+        "price": 9000000
+    },
+    "AMD Ryzen 5 5600X": {
+        "RAM_requirement": 16,
+        "WATT": 200,
+        "processor_type": "AMD",
+        "Grade": "medium",
+        "price": 8500000
+    },
+    "Intel Core i5-10600K": {
+        "RAM_requirement": 16,
+        "WATT": 190,
+        "processor_type": "Intel",
+        "Grade": "medium",
+        "price": 8000000
+    },
+    "AMD Ryzen 7 3700X": {
+        "RAM_requirement": 16,
+        "WATT": 180,
+        "processor_type": "AMD",
+        "Grade": "medium",
+        "price": 7500000
+    },
+    "Intel Core i3-10100": {
+        "RAM_requirement": 16,
+        "WATT": 150,
+        "processor_type": "Intel",
+        "Grade": "low",
+        "price": 5500000
+    },
+    "AMD Ryzen 3 3300X": {
+        "RAM_requirement": 16,
+        "WATT": 140,
+        "processor_type": "AMD",
+        "Grade": "low",
+        "price": 5000000
+    },
+    "Intel Pentium Gold G6400": {
+        "RAM_requirement": 16,
+        "WATT": 120,
+        "processor_type": "Intel",
+        "Grade": "low",
+        "price": 4000000
+    },
+    "AMD Athlon 3000G": {
+        "RAM_requirement": 16,
+        "WATT": 110,
+        "processor_type": "AMD",
+        "Grade": "low",
+        "price": 3500000
+    }
+}

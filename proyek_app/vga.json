@@ -1,0 +1,52 @@
+{
+    "NVIDIA GeForce RTX 3090": {
+        "WATT": 350,
+        "Grade": "high",
+        "price": 30000000
+    },
+    "AMD Radeon RX 6900 XT": {
+        "WATT": 300,
+        "Grade": "high",
+        "price": 28000000
+    },
+    "NVIDIA GeForce RTX 3080": {
+        "WATT": 320,
+        "Grade": "high",
+        "price": 25000000
+    },
+    "AMD Radeon RX 6800": {
+        "WATT": 250,
+        "Grade": "medium",
+        "price": 20000000
+    },
+    "NVIDIA GeForce RTX 3070": {
+        "WATT": 220,
+        "Grade": "medium",
+        "price": 18000000
+    },
+    "AMD Radeon RX 6700 XT": {
+        "WATT": 230,
+        "Grade": "medium",
+        "price": 17000000
+    },
+    "NVIDIA GeForce GTX 1660 Super": {
+        "WATT": 125,
+        "Grade": "low",
+        "price": 10000000
+    },
+    "AMD Radeon RX 5500 XT": {
+        "WATT": 130,
+        "Grade": "low",
+        "price": 9000000
+    },
+    "NVIDIA GeForce GTX 1650": {
+        "WATT": 100,
+        "Grade": "low",
+        "price": 8000000
+    },
+    "AMD Radeon RX 560": {
+        "WATT": 90,
+        "Grade": "low",
+        "price": 7000000
+    }
+}

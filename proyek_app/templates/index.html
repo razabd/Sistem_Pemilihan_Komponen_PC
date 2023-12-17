@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PC Component Selector</title>
+</head>
+<body>
+    <h1>Choose Your PC Components</h1>
+    <form action="/recommend" method="post">
+        <label for="processor_grade">Processor Grade:</label>
+        <select name="processor_grade" id="processor_grade">
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+        </select><br>
+
+        <label for="motherboard_grade">Motherboard Grade:</label>
+        <select name="motherboard_grade" id="motherboard_grade">
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+        </select><br>
+
+        <label for="vga_grade">VGA Grade:</label>
+        <select name="vga_grade" id="vga_grade">
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+        </select><br>
+
+        <label for="psu_grade">PSU Grade:</label>
+        <select name="psu_grade" id="psu_grade">
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+        </select><br>
+
+        <label for="budget">Budget:</label>
+        <input type="number" id="budget" name="budget" required><br>
+
+        <input type="submit" value="Recommend PC Components">
+    </form>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{
+    "ASUS ROG Maximus XI Hero (Z390)": {
+        "processor_type": "Intel",
+        "WATT": 50,
+        "price": 5650000,
+        "Grade": "high"
+    },
+    "MSI MPG Z490 Gaming Edge WiFi": {
+        "processor_type": "Intel",
+        "WATT": 55,
+        "price": 4900000,
+        "Grade": "medium"
+    },
+    "Gigabyte Z390 Aorus Ultra": {
+        "processor_type": "Intel",
+        "WATT": 60,
+        "price": 6000000,
+        "Grade": "high"
+    },
+    "ASUS TUF Gaming X570-Plus (Wi-Fi)": {
+        "processor_type": "AMD",
+        "WATT": 65,
+        "price": 5500000,
+        "Grade": "medium"
+    },
+    "MSI B450 Tomahawk Max": {
+        "processor_type": "AMD",
+        "WATT": 45,
+        "price": 4500000,
+        "Grade": "low"
+    }
+}

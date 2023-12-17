@@ -1,0 +1,17 @@
+processor = {Intel Core i9-14900K, Intel, 16gb, 250, high, 10455000} //nama processor, Merek Processor, RAM, WATT, tingkatan spek, harga
+Motherboard = {ASUS ROG Maximus XI Hero (Z390), Intel, 50, 5650000} //jenis Motherboard, Merek processor, WATT, harga
+RAM = {Corsair Vengeance LPX, 16, 810000} //Nama RAM, Total RAM, harga
+VGA = {NVIDIA GeForce RTX 3070, 220, high, 9200000} //Nama VGA, WATT, tingkatan spek, harga
+PSU = {Seasonic Focus GX-650, 650, 1790000} //Nama PSU, daya WATT, harga
+
+
+berikut adalah keperluannya:
+1. RAM perlu memenuhi kebutuhan RAM Processor
+
+2. bila RAMnya dipilih low berarti hanya perlu memenuhi kebutuhan RAM dari processornya bila medium maka dikali 2
+
+3. jangan lupa untuk menentukan WATT dari setiap komponen lalu pilih PSU yang memadai
+
+Variabel: Processor, VGA, RAM, Budget
+Domain: Low, Medium, High
+Constraint: Ditemukan variabel yang sesuai dengan domainnya

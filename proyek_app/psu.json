@@ -1,0 +1,52 @@
+{
+    "Corsair AX1600i": {
+        "WATT": 1600,
+        "Grade": "high",
+        "price": 4500000
+    },
+    "EVGA SuperNOVA 1000 P2": {
+        "WATT": 1000,
+        "Grade": "high",
+        "price": 4000000
+    },
+    "Seasonic PRIME TX-1000": {
+        "WATT": 1000,
+        "Grade": "high",
+        "price": 3800000
+    },
+    "Corsair RM750x": {
+        "WATT": 750,
+        "Grade": "medium",
+        "price": 2500000
+    },
+    "Seasonic Focus GX-750": {
+        "WATT": 750,
+        "Grade": "medium",
+        "price": 2300000
+    },
+    "EVGA 650 GQ": {
+        "WATT": 650,
+        "Grade": "medium",
+        "price": 2000000
+    },
+    "Cooler Master MWE 550": {
+        "WATT": 550,
+        "Grade": "low",
+        "price": 1500000
+    },
+    "Thermaltake Smart 500W": {
+        "WATT": 500,
+        "Grade": "low",
+        "price": 1300000
+    },
+    "EVGA 450 BR": {
+        "WATT": 450,
+        "Grade": "low",
+        "price": 1200000
+    },
+    "Be Quiet! System Power 9 400W": {
+        "WATT": 400,
+        "Grade": "low",
+        "price": 1000000
+    }
+}
