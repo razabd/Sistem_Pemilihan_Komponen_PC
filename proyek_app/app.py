@@ -2,7 +2,7 @@ from flask import Flask, request, render_template
 import json
 from constraint import Problem
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='proyek_app/templates')
 
 # Function to load data from a JSON file within the template directory
 def load_data(file_name):

@@ -1,43 +1,217 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<!-- HEAD START -->
 <head>
-    <title>PC Component Selector</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Steller landing page.">
+    <meta name="author" content="Devcrud">
+    <title>ITS</title>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>Choose Your PC Components</h1>
-    <form action="/recommend" method="post">
-        <label for="processor_grade">Processor Grade:</label>
-        <select name="processor_grade" id="processor_grade">
-            <option value="high">High</option>
-            <option value="medium">Medium</option>
-            <option value="low">Low</option>
-        </select><br>
+<!-- HEAD END -->
 
-        <label for="motherboard_grade">Motherboard Grade:</label>
-        <select name="motherboard_grade" id="motherboard_grade">
-            <option value="high">High</option>
-            <option value="medium">Medium</option>
-            <option value="low">Low</option>
-        </select><br>
+<!-- BODY START -->
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <!-- NAVBARN START -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="image/logo.svg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <label for="vga_grade">VGA Grade:</label>
-        <select name="vga_grade" id="vga_grade">
-            <option value="high">High</option>
-            <option value="medium">Medium</option>
-            <option value="low">Low</option>
-        </select><br>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="- btn btn-primary rounded ml-4" href="components.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>          
+    </nav>
+    <!-- NAVBAR END -->
 
-        <label for="psu_grade">PSU Grade:</label>
-        <select name="psu_grade" id="psu_grade">
-            <option value="high">High</option>
-            <option value="medium">Medium</option>
-            <option value="low">Low</option>
-        </select><br>
+    <!-- HOME START -->
+    <header class="header" id="home">
+        <div class="container">
+            <div class="infos">
+                <h6 class="title">Bingung Mau </h6>
+                <h6 class="title">Rakit PC?</h6>
+                <p>Sini Kita Bantuin</p>
 
-        <label for="budget">Budget:</label>
-        <input type="number" id="budget" name="budget" required><br>
 
-        <input type="submit" value="Recommend PC Components">
-    </form>
-</body>
+
+                <div class="buttons pt-3">
+                    <button class="btn btn-primary rounded" onclick="location.href='#service'">Rakit</button>
+                    <button class="btn btn-dark rounded">Konsultasi</button>
+                </div>      
+
+                <div class="socials mt-4">
+                    <a  href="javascript:void(0)">
+                        <i class='bx bxl-github' style='font-size: 45px; color: #343a40;'></i>
+                    </a>
+                    
+                </div>
+            </div>              
+            <div class="img-holder">
+                <img src="image/man.svg" alt="">
+            </div>      
+        </div>  
+
+        <!-- WIDGET -->
+        <div class="widget">
+            <div class="widget-item">
+                <h2>600+</h2>
+                <p>Pelanggan</p>
+            </div>
+            <div class="widget-item">
+                <h2>150+</h2>
+                <p>Project Terselesaikan</p>
+            </div>
+            <div class="widget-item">
+                <h2>5+</h2>
+                <p>Provinsi</p>
+            </div>
+        </div>
+    </header>
+    <!-- HOME END -->
+    
+    <!-- ABOUT START -->
+    <section id="about" class="section mt-3">
+        <div class="container mt-5">
+            <div class="row text-center text-md-left">
+                <div class="col-md-3">
+                    <img src="assets/imgs/avatar.jpg" alt="" class="img-thumbnail mb-4">
+                </div>
+                <div class="container text-center">
+                    <h6 class="title">About us</h6>
+                </p>Selamat datang di ITS PC BUILDER , tempat di mana keinginan Anda untuk memiliki komputer yang sesuai dengan kebutuhan Anda menjadi kenyataan. Kami adalah tim profesional yang berkomitmen untuk menyediakan layanan rakit komputer yang handal dan terpercaya.</p>                  
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT END -->
+
+    <!-- SERVICE START -->
+    <section id="service" class="section">
+        <div class="container text-center">
+            <h6 class="title">Service</h6>
+            <style>
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    margin-bottom: 10px;
+                }
+        
+                table, th, td {
+                    border: 1px solid white;
+                }
+        
+                th, td {
+                    padding: 8px;
+                    text-align: left;
+                }
+        
+                /* Flex container for labels and selects */
+                td {
+                    display: flex;
+                    align-items: center;
+                }
+        
+                /* Adjust label width if needed */
+                td label {
+                    flex: 1; /* Take up available space */
+                    margin-right: 10px; /* Adjust margin as needed */
+                }
+            </style>
+
+            <form action="/recommend" method="post">
+                <table>
+                    <tr>
+                        <th>Component</th>
+                    </tr>
+                    
+                    <!-- Processor -->
+                    <tr>
+                        <td>
+                            <label for="processor">Processor:</label>
+                            <select class="btn btn-primary rounded ml-4" name="processor">
+                                <option value="low">Low</option>
+                                <option value="medium">Medium</option>
+                                <option value="high">High</option>
+                            </select>
+                        </td>
+                    </tr>
+        
+                    <!-- Graphic Card -->
+                    <tr>
+                        <td>
+                            <label for="graphicCard">Graphic Card:</label>
+                            <select class="btn btn-primary rounded ml-4" name="graphicCard">
+                                <option value="low">Low</option>
+                                <option value="medium">Medium</option>
+                                <option value="high">High</option>
+                            </select>
+                        </td>
+                    </tr>
+        
+                    <!-- RAM -->
+                    <tr>
+                        <td>
+                            <label for="ram">RAM:</label>
+                            <select class="btn btn-primary rounded ml-4" name="RAM">
+                                <option value="low">Low</option>
+                                <option value="medium">Medium</option>
+                                <option value="high">High</option>
+                            </select>
+                        </td>
+                    </tr>
+        
+                    <!-- HDD -->
+                    <tr>
+                        <td>
+                            <label for="hdd">HDD:</label>
+                            <select class="btn btn-primary rounded ml-4" name="HDD">
+                                <option value="low">Low</option>
+                                <option value="medium">Medium</option>
+                                <option value="high">High</option>
+                            </select>
+                        </td>
+                    </tr>
+        
+                    <!-- Budget -->
+                    <tr>
+                        <td>
+                            <label for="budget">Budget:</label>
+                            <input class="btn btn-secondary rounded ml-4" type="number" name="budget" required step="100000">
+                        </td>
+                    </tr>
+                </table>
+
+                <button class="btn btn-primary rounded">Rekomendasikan</button>
+            </form>
+        </section>
+
+    <script src="script.js"></script>
+        
+        </body>
+        </html>
 </html>
+
+        
+
+    
+
+

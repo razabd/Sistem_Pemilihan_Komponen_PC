@@ -3,7 +3,7 @@
     --indigo: #C45F90;
     --purple: #A16AE8;
     --pink: #FC8BC0;
-    --red: #F85C70;
+    --red: #0067AB;
     --orange: #0067AB;
     --yellow: #FAD02C;
     --green: #A3C14A;
@@ -17,7 +17,7 @@
     --success: #A3C14A;
     --info: #47D8E0;
     --warning: #FAD02C;
-    --danger: #F85C70;
+    --danger: #0067AB;
     --light: #f8f9fa;
     --dark: #343a40;
     --breakpoint-xs: 0;
@@ -2760,6 +2760,8 @@
     background-color: #0067AB;
     border-color: #0067AB;
   }
+
+
   
   .btn-primary:hover {
     color: #fff;
@@ -2791,8 +2793,8 @@
   
   .btn-secondary {
     color: #fff;
-    background-color: #6c757d;
-    border-color: #6c757d;
+    background-color: #212529;
+    border-color: #212529;
   }
   
   .btn-secondary:hover {
@@ -10996,6 +10998,10 @@
     border-radius: 0.25rem;
   }
   
+  .bx bxl-github {
+    color: #0067AB;
+  }
+
   .socials {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -11004,14 +11010,14 @@
   }
   
   .socials .social-item {
-    display: block;
+    display: inside;
     margin: 0 5px;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 2px solid #ff7a57;
-    color: #ff7a57;
-    text-align: center;
+    border: 2px solid #0067AB;
+    color: #0067AB;
+    text-align: justify;
     line-height: 40px;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
@@ -11019,7 +11025,7 @@
   }
   
   .socials .social-item:hover {
-    background: #ff7a57;
+    background: #0067AB;
     color: #fff;
   }
   
